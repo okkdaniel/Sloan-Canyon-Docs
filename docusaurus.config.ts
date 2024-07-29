@@ -72,8 +72,6 @@ const config: Config = {
       logo: {
         alt: 'My Site Logo',
         src: 'img/SloanCanyonRobotics.png',
-        
-        
       },
         
       items: [
