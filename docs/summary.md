@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-#Purpose
+# Purpose
 
--Keep all of Sloan Canyon Robotics knowledge in an easily accessible place
--Serve as a learning resource for new students
+1. Keep all of Sloan Canyon Robotics' knowledge in an easily accessible place.
+2. Serve as a learning resource for new students.
