@@ -70,7 +70,7 @@ const config: Config = {
     navbar: {
       title: '74177 Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Sloan Canyon Robotics',
         src: 'img/SloanCanyonRobotics.png',
       },
         
