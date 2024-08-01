@@ -47,4 +47,8 @@
     padding:0 var(--ifm-footer-padding-horizontal);
   }
 
+  .login-page .navbar {
+    display: none;
+  }
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
