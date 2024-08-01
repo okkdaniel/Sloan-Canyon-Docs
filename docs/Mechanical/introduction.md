@@ -8,4 +8,4 @@ Robot mechanics is very important to competing in VEX Robotics. Building techniq
 
 # Learning Path
 
-We will cover building techniques, fundamentals, and different mechanisms.
+We will cover building techniques, fundamentals, general practices, and different subsystems/mechanisms.
