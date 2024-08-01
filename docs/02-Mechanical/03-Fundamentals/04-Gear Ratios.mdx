@@ -5,7 +5,11 @@ date: "2024-07-31"
 
 # Gear Ratios
 
-**When working with gears in VEX robotics, you often need to determine how the gear ratio affects the output RPM of your robot's mechanisms.**
+**When working with gears/sprockets in VEX robotics, you often need to determine how the gear ratio affects the output RPM of your robot's mechanisms.**
+
+:::info[Info]
+Gear Ratios are also applicable to sprockets
+:::
 
 ## Understanding Gear Ratios
 
@@ -13,7 +17,11 @@ The gear ratio affects the rotational speed (RPM) and torque between the driving
 
 ---
 
-## Calculating Output RPM
+## Calculating RPM/Torque
+
+<span style={{ fontSize: '1.5em' }}>
+  *Calculating Output RPM*
+</span>
 
 To calculate the output RPM of the driven gear based on the gear ratio and motor RPM, use this formula: 
 
@@ -21,7 +29,9 @@ To calculate the output RPM of the driven gear based on the gear ratio and motor
 Output RPM = (Driving Gear / Driven Gear) * Motor RPM
 ```
 
-## Calculating Output Torque
+<span style={{ fontSize: '1.5em' }}>
+  *Calculating Output Torque*
+</span>
 
 To calculate the output RPM of the driven gear based on the gear ratio, use this formula:
 
@@ -33,21 +43,36 @@ Output Torque = (Driven Gear / Driving Gear)
 
 ## Example Calculations
 
-<span style={{ fontSize: '20px' }}>Example Calculation - Speed</span>
+<span style={{ fontSize: '1.5em' }}>
+  *Example Calculation - Speed Ratio*
+</span>
 
+```c
+- The driving gear has 36 teeth.
+- the driven gear has 12 teeth.
+- the motor output is 200 rpm.
 
-<span style={{ fontSize: '20px' }}>Example Calculation - Torque</span>
+Output RPM = (36 / 12) * 200 = 600 RPM
+Output Torque = (12 / 36) = 1 / 3
+```
+This means that the output RPM is 3 times the amount of the motor RPM. while the output torque is 1/3 that of the motor torque.
 
-Lets say: 
+<span style={{ fontSize: '1.5em' }}>
+  *Example Calculation - Torque Ratio*
+</span> 
 
 ```c
 - The driving gear has 12 teeth.
 - The driven gear has 36 teeth.
 - The motor output is 200 rpm.
 
-Output RPM = (12/36) * 200 = 66.6667... RPM
-Output Torque = (36/12) = 3
+Output RPM = (12 / 36) * 200 = 66.6667 RPM
+Output Torque = (36 / 12) = 3
 ```
 This means that the output RPM is 1/3 the amount of the motor RPM, while the output torque is 3 times that of the motor torque.
 
----
+<div style={{ marginTop: '2em', borderTop: '1px solid #5555', paddingTop: '1em', textAlign: 'right' }}>
+  <p style={{ fontSize: '0.9em', color: '#555' }}>
+    <span style={{ color: '#ccc' }}><strong>Author</strong>: </span> <span style={{ color: '#bbb' }}>Daniel Kaliko</span><br />
+  </p>
+</div>
