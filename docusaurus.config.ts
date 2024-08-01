@@ -122,35 +122,6 @@ const config: Config = {
       } as Preset.Options,
     ],
   ],
-  plugins: [
-    function customPlugin(context, options) {
-      return {
-        name: 'custom-plugin',
-        async contentLoaded({actions}) {
-          const {addRoute} = actions;
-          addRoute({
-            path: '/login',
-            component: '@site/src/pages/LoginPage',
-            exact: true,
-          });
-        },
-      };
-    },
-    function (context, options) {
-      return {
-        name: 'protected-routes-plugin',
-        configureWebpack(config, isServer, utils) {
-          return {
-            resolve: {
-              alias: {
-                '@theme/Root': './src/components/ProtectedRoute',
-              },
-            },
-          };
-        },
-      };
-    },
-  ],
   themeConfig: 
     {
       colorMode: {
