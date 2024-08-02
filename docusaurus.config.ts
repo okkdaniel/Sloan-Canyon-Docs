@@ -67,9 +67,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   scripts: ['/passwordProtect.js'],
-  customFields: {
-    disableVersioning: true,
-  },
 
   i18n: {
     defaultLocale: 'en',
@@ -86,9 +83,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
         },
-        blog: {
-          showReadingTime: true,
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -101,8 +95,6 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
-    liveReload: false,
-    hotOnly: false,
     // anonymous search results
     metadata: [
       {name: 'robots', content: 'noindex, nofollow'},
