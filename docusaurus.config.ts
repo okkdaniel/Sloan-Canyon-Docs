@@ -66,7 +66,7 @@ const config: Config = {
   projectName: 'Sloan-Canyon-Docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  scripts: ['/passwordProtect.js'],
+  // scripts: ['/passwordProtect.js'],
   customFields: {
     disableVersioning: true,
   },
@@ -101,6 +101,8 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    liveReload: false,
+    hotOnly: false,
     // anonymous search results
     metadata: [
       {name: 'robots', content: 'noindex, nofollow'},
