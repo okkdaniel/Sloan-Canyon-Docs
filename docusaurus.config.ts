@@ -93,6 +93,10 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    // anonymous search results
+    metadata: [
+      {name: 'robots', content: 'noindex, nofollow'},
+    ],
     image: 'img/SloanCanyonRobotics.png',
     navbar: {
       title: '74177 Docs',
