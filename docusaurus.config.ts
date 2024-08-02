@@ -66,10 +66,15 @@ const config: Config = {
   projectName: 'Sloan-Canyon-Docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  scripts: ['/passwordProtect.js'],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+  
   },
+
+  
   
   presets: [
     [
