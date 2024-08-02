@@ -67,6 +67,9 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   scripts: ['/passwordProtect.js'],
+  customFields: {
+    disableVersioning: true,
+  },
 
   i18n: {
     defaultLocale: 'en',
