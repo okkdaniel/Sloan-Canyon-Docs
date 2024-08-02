@@ -66,7 +66,8 @@ const config: Config = {
   projectName: 'Sloan-Canyon-Docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  // scripts: ['/passwordProtect.js'],
+  scripts: ['/passwordProtect.js'],
+  customFields: {},
 
   i18n: {
     defaultLocale: 'en',
