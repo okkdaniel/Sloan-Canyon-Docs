@@ -4,5 +4,115 @@ date: "2024-08-01"
 ---
 
 # Power Transmission
+Power transmission in robotics is a crucial aspect of converting the motor's energy into the desired mechanical movement. Effective power transmission ensures that the robot operates efficiently and reliably. In VEX robotics, there are several methods of power transmission, each with its own advantages and applications. This section will cover the primary methods: gears, chains, and direct drive, and discuss their optimal uses, benefits, and drawbacks, with a focus on gear trains for drivetrains, chains for intakes, and torque gear trains for lifts.
 
-**When building VEX robots, you have to consider ways to transmit power to your mechanism. There are different ways to do this, such as gears, chain, or direct drive.**
+## Gear Trains
+Gear trains are the most reliable and effective method for power transmission in drivetrains and lifts. They are used to change the direction of movement, increase torque, or adjust the speed of rotation.
+
+:::info[Example]
+- Below is an sketched example of a simple Gear Train.
+
+![Gear Train Example](\img\GearTrainExample.jpg)
+:::
+
+**Advantages:**
+- **Precision**: Gears provide precise control over movement and speed, crucial for accurate driving and lifting.
+- **Strength**: They can transmit a significant amount of torque without slipping, making them ideal for drivetrain and lift applications.
+- **Variety**: Available in various sizes and configurations (spur, bevel, worm gears), gears can be tailored to specific needs.
+- **Lightweight**: Gears and sprockets are made of lightweight materials suitable for VEX robots.
+- **Low Maintenance**: VEX gears are durable and require minimal maintenance.
+
+**Disadvantages:**
+- **Complexity**: Gear systems can be complex to design and assemble.
+- **Alignment**: Proper alignment is crucial to avoid wear and ensure efficient power transfer.
+
+**Applications:**
+- **Drivetrains**: Gear trains provide the strength and precision needed for reliable and controlled movement.
+- **Lifts**: Torque gear trains are essential for lifting mechanisms, providing the necessary force to lift heavy loads with precision.
+
+### Compound Gear Trains
+
+:::info[Example]
+- Below is a sketched example of a simple Compound Gear Train(Top and Front Plane View).
+
+![Compound Gear Train Example](\img\CompoundGearTrainExample.jpg)
+:::
+
+- **Explanation**: Compound gear ratios involve using multiple pairs of gears to achieve a higher gear reduction or increase. This is useful when a significant change in speed or torque is needed that cannot be achieved with a single pair of gears.
+- **Advantages**: By combining gear pairs, you can achieve very high or low gear ratios, making it possible to fine-tune the speed and torque of your robot.
+- **Applications**: Compound gear ratios are often used in lifts and mechanisms requiring significant torque changes over a short distance.
+
+---
+
+## Chain/Sprocket
+Chains are composed of linked segments and are used to transmit power over a distance with high efficiency and speed. They are especially useful for intakes due to their flexibility and ability to handle high-speed operations.
+
+:::info[Example]
+- Below is a sketched example of a simple Sprocket/Chain Train.
+
+![Sprocket Train Example](\img\SprocketTrainExample.jpg)
+:::
+
+
+**Advantages:**
+- **Flexibility**: Chains can accommodate varying distances and orientations between components, ideal for complex intake mechanisms.
+- **Durability**: Chains are robust and can withstand the dynamic conditions often encountered by intakes.
+- **Efficiency**: Chains are efficient at transmitting power at high speeds.
+- **Lightweight**: VEX plastic chains and sprockets are lightweight, minimizing additional load on the robot.
+
+**Disadvantages:**
+- **Torque Limitation**: Chains do not transmit torque as effectively as gears, making them less suitable for high-torque applications.
+- **Noise**: Chains can be noisier compared to direct drive systems.
+
+**Applications:**
+- **Intakes**: Chains are perfect for intakes due to their ability to handle high-speed operations and flexibility in routing power.
+
+---
+
+## Direct Drive
+Direct drive systems involve connecting the motor directly to the driven component without intermediary components like gears or chains. While this method offers simplicity and efficiency, it is less suited for high-torque applications such as drivetrains and lifts.
+
+**Advantages:**
+- **Simplicity**: Fewer components result in a simpler design and easier assembly.
+- **Efficiency**: Direct drive systems have minimal power loss due to the lack of intermediary components.
+- **Quiet Operation**: Direct drive systems typically produce less noise compared to gears and chains.
+
+**Disadvantages:**
+- **Torque Limitation**: Direct drive systems may be limited in the amount of torque they can handle, depending on the motor's capability.
+- **Flexibility**: Lack of gearing options may limit the ability to adjust speed and torque ratios.
+
+**Applications:**
+- Applications requiring high efficiency and low maintenance.
+- Situations where space and weight are limited.
+- Systems where quiet operation is crucial, though these are less critical in VEX competitions.
+
+---
+
+## Center to Center Distance
+The Center-to-Center distance is the measurement between the centers of two gears or sprockets. Improper Center-to-Center distance will cause over/undermeshing, which will cause friction or skipping of gears/chain.
+
+:::info[Example]
+- Below is a sketched example of Center to Center Distance.
+
+![Center To Center Example](\img\CenterToCenterExample.jpg)
+:::
+
+**Increments:**
+- **Gears**: For gears, the center-to-center distance should always be an increment of 0.25 inches or 0.5 inches. Offset gears will be an increment of 0.25 inches, while regular gearing will be in increments of 0.5 inches. This ensures that the gears mesh properly without binding or excessive play.
+- **Sprockets**: For sprockets, the center-to-center distance should always be an increment of 0.5 inches. This helps in maintaining proper tension in the chain, prevents skipping, and ensures smooth operation. In some cases an increment of 0.5 inches isn't possible, a tensioner will need to be introduced to keep the chain tensioned.
+
+---
+
+## Choosing Transmit Method
+Selecting the appropriate power transmission method depends on several factors, including the specific requirements of the robot, the design constraints, and the desired performance characteristics.
+
+**Considerations:**
+- **Load and Torque Requirements**: High torque applications such as drivetrains and lifts benefit from gear trains, while chains are well-suited for the high-speed operations of intake mechanisms.
+- **Space and Weight Constraints**: Direct drive can be beneficial in tight spaces and for weight-sensitive designs, but may not provide the necessary torque for drivetrains and lifts.
+- **Maintenance and Durability**: VEX gears and chains offer durability with minimal maintenance requirements.
+
+<div style={{ marginTop: '2em', borderTop: '1px solid #5555', paddingTop: '1em', textAlign: 'right' }}>
+  <p style={{ fontSize: '0.9em', color: '#555' }}>
+    <span style={{ color: '#ccc' }}><strong>Author</strong>: </span> <span style={{ color: '#bbb' }}>Daniel Kaliko</span><br />
+  </p>
+</div>
