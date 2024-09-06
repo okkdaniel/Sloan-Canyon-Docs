@@ -91,11 +91,44 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    scripts: [
+      {
+        src: '/clarity.html',
+        async: true,
+        defer: true,
+      },
+    ],
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    plugins: [
+      // ... other plugins
+      function authCheck(context, options) {
+        return {
+          name: 'auth-check',
+          injectHtmlTags() {
+            return {
+              headTags: [
+                {
+                  tagName: 'script',
+                  innerHTML: `
+                    (function() {
+                      var isAuth = localStorage.getItem('isAuthenticated');
+                      var currentPath = window.location.pathname;
+                      if (isAuth !== 'true' && currentPath !== '/password-protection/') {
+                        window.location.href = '/password-protection/';
+                      }
+                    })();
+                  `,
+                },
+              ],
+            };
+          },
+        };
+      },
+    ],
     // anonymous search results
     metadata: [
       {name: 'robots', content: 'noindex, nofollow'},
