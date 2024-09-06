@@ -75,7 +75,14 @@ const config: Config = {
   
   },
 
-  
+  plugins: [
+    [
+      'docusaurus-plugin-clarity',
+      {
+        clarity_project_id: 'nystl1veng',
+      },
+    ],
+  ],
   
   presets: [
     [
@@ -104,7 +111,6 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     plugins: [
-      // ... other plugins
       function authCheck(context, options) {
         return {
           name: 'auth-check',
