@@ -98,13 +98,10 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    scripts: [
-      {
-        src: '/clarity.html',
-        async: true,
-        defer: true,
-      },
-    ],
+    clarity: {
+      projectId: 'nystl1veng',  // Replace with your actual Clarity project ID
+    },
+
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
