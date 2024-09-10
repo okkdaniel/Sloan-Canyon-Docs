@@ -87,4 +87,25 @@
     display: block;
   }
 
+  /* Container to maintain aspect ratio */
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+/* The iframe itself should fill the container */
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */

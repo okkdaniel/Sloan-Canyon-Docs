@@ -74,15 +74,6 @@ const config: Config = {
     locales: ['en'],
   
   },
-
-  plugins: [
-    [
-      'docusaurus-plugin-clarity',
-      {
-        clarity_project_id: 'nystl1veng',
-      },
-    ],
-  ],
   
   presets: [
     [
